@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TAFREEZ References</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: poster-green band with the title, then one reading column of numbered citations matching the poster's [1]-[4] */
+:root {
+  --bg: #F4F2EA; --card: #FFFFFF; --ink: #14302F; --muted: #4F625F; --line: #D3DEDA;
+  --band: #0E3B3A; --band-ink: #FFFFFF; --band-sub: #CFE3DD; --accent: #1A6E61; --mint: #8FD3C3;
+  --font: "IBM Plex Sans Arabic", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #111A19; --card: #1A2625; --ink: #E3EBE8; --muted: #A3B5B0; --line: #2E3D3A;
+  --band: #0A2A29; --band-ink: #FFFFFF; --band-sub: #B9D3CC; --accent: #6CCBB8; --mint: #8FD3C3; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #111A19; --card: #1A2625; --ink: #E3EBE8; --muted: #A3B5B0; --line: #2E3D3A;
+  --band: #0A2A29; --band-ink: #FFFFFF; --band-sub: #B9D3CC; --accent: #6CCBB8; --mint: #8FD3C3; color-scheme: dark }
+body { background: var(--bg); color: var(--ink); font-family: var(--font); font-size: 16px; line-height: 1.6; }
+.band { background: var(--band); color: var(--band-ink); padding-block: 34px 28px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.wrap { max-width: 720px; margin: 0 auto; }
+.eyebrow { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--mint); font-weight: 600; margin: 0; }
+h1 { font-size: clamp(30px, 6vw, 42px); line-height: 1.1; margin: 6px 0 6px; text-wrap: balance; }
+.band p.sub { color: var(--band-sub); margin: 0; }
+main { padding-block: 26px 48px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+li { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 14px; }
+.num { font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; grid-row: span 2; }
+.cite { margin: 0; }
+a { color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere; font-size: 15px; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.note { color: var(--muted); font-size: 14px; margin: 18px 0 0; }
+</style>
+<style>body{margin:0}</style>
+</head>
+<body>
+<header class="band"><div class="wrap">
+  <p class="eyebrow">SAIF 2026 · SAIF130081</p>
+  <h1>TAFREEZ References</h1>
+  <p class="sub">Sources cited on the poster, numbered as they appear there. Anfal Alotaibi.</p>
+</div></header>
+
+<main><div class="wrap">
+  <ol>
+    <li><span class="num">[1]</span>
+      <p class="cite">Brooks, C. (2023). <i>Publicly Funded Forensic Crime Laboratories, 2020</i> (NCJ 306473). Bureau of Justice Statistics.</p>
+      <a href="https://bjs.ojp.gov/library/publications/publicly-funded-forensic-crime-laboratories-2020">bjs.ojp.gov/library/publications/publicly-funded-forensic-crime-laboratories-2020</a></li>
+    <li><span class="num">[2]</span>
+      <p class="cite">National Institute of Justice. <i>Principles of Forensic DNA for Officers of the Court: Prioritization</i>.</p>
+      <a href="https://nij.ojp.gov/nij-hosted-online-training-courses/principles-forensic-dna-officers-court/03-practical-issues-specific-dna-evidence/initial-consideration-laboratory-protocol/prioritization">nij.ojp.gov: Prioritization</a></li>
+    <li><span class="num">[3]</span>
+      <p class="cite">INTERPOL (2023). <i>Disaster Victim Identification Guide</i>.</p>
+      <a href="https://www.interpol.int/en/How-we-work/Forensics/Disaster-Victim-Identification-DVI">interpol.int: Disaster Victim Identification</a></li>
+    <li><span class="num">[4]</span>
+      <p class="cite">US20150204894A1. <i>Relative routing priority for test requests</i>.</p>
+      <a href="https://patents.google.com/patent/US20150204894">patents.google.com/patent/US20150204894</a></li>
+  </ol>
+  <p class="note">© 2026 Anfal H.K. Alotaibi</p>
+</div></main>
+</body>
+</html>
